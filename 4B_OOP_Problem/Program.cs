@@ -12,7 +12,7 @@ namespace _4B_OOP_Problem
         {
             Console.WriteLine("Welcome to OOP's Practice problems");
             Console.WriteLine("Please select any one option from following.");
-            Console.WriteLine(" 1.Duplicate Numbers\n 2.Unique Element Printer\n 3.Count Frequency of Elements\n 4.ArrayMinMaxFinder\n 5.Pattern Printer\n 6.Print Square Pattern");
+            Console.WriteLine(" 1.Duplicate Numbers\n 2.Unique Element Printer\n 3.Count Frequency of Elements\n 4.ArrayMinMaxFinder\n 5.Pattern Printer\n 6.Print Square Pattern\n 7.Word Reverser");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -57,6 +57,15 @@ namespace _4B_OOP_Problem
                     int column = 7;
                     PrintPattern pattern = new PrintPattern(row, column);
                     pattern.PatternPrint();
+                    break;
+
+                case 7:
+                    Console.WriteLine("Enter a string:");
+                    string input = Console.ReadLine();
+                    StringWordReverser reverser = new StringWordReverser(input);
+                    string reversedString = reverser.ReverseWords();
+                    Console.WriteLine("Original string: " + input);
+                    Console.WriteLine("Reversed string: " + reversedString);
                     break;
 
             }
