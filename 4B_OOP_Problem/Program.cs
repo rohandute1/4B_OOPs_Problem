@@ -12,7 +12,7 @@ namespace _4B_OOP_Problem
         {
             Console.WriteLine("Welcome to OOP's Practice problems");
             Console.WriteLine("Please select any one option from following.");
-            Console.WriteLine(" 1.Duplicate Numbers\n 2.Unique Element Printer\n 3.Count Frequency of Elements\n 4.ArrayMinMaxFinder\n 5.Pattern Printer\n 6.Print Square Pattern\n 7.Word Reverser\n 8.Calculate digit sum");
+            Console.WriteLine(" 1.Duplicate Numbers\n 2.Unique Element Printer\n 3.Count Frequency of Elements\n 4.ArrayMinMaxFinder\n 5.Pattern Printer\n 6.Print Square Pattern\n 7.Word Reverser\n 8.Calculate digit sum\n 9.Calculate Matrix Row Sum");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -74,6 +74,35 @@ namespace _4B_OOP_Problem
                     DigitSumCalculator calculator = new DigitSumCalculator(num);
                     int digitSum = calculator.CalculateDigitSum();
                     Console.WriteLine("Sum of digits: " + digitSum);
+                    break;
+
+                case 9:
+                    int[,] matrix = {
+                                    { 1, 2, 3 },
+                                    { 4, 5, 6 },
+                                    { 7, 8, 9 }
+                              };
+
+                    MatrixRowSumCalculator cal = new MatrixRowSumCalculator(matrix);
+                    int[] rowSums = cal.CalculateRowSums();
+
+                    Console.WriteLine("Matrix:");
+
+                    for (int i = 0; i < matrix.GetLength(0); i++)
+                    {
+                        for (int j = 0; j < matrix.GetLength(1); j++)
+                        {
+                            Console.Write(matrix[i, j] + " ");
+                        }
+                        Console.WriteLine();
+                    }
+
+                    Console.WriteLine("Sum of each row:");
+
+                    for (int i = 0; i < rowSums.Length; i++)
+                    {
+                        Console.WriteLine("Row " + (i + 1) + ": " + rowSums[i]);
+                    }
                     break;
 
             }

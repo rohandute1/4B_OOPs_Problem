@@ -46,6 +46,7 @@
     <Compile Include="DigitSumCalculator.cs" />
     <Compile Include="DuplicateCounter.cs" />
     <Compile Include="ElementFrequencyCounter.cs" />
+    <Compile Include="MatrixRowSumCalculator.cs" />
     <Compile Include="Max-Min_Element_Finder.cs" />
     <Compile Include="PatternPrinter.cs" />
     <Compile Include="PrintPattern.cs" />
