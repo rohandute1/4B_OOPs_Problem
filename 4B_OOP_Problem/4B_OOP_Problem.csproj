@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DigitSumCalculator.cs" />
     <Compile Include="DuplicateCounter.cs" />
     <Compile Include="ElementFrequencyCounter.cs" />
     <Compile Include="Max-Min_Element_Finder.cs" />

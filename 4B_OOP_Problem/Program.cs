@@ -12,7 +12,7 @@ namespace _4B_OOP_Problem
         {
             Console.WriteLine("Welcome to OOP's Practice problems");
             Console.WriteLine("Please select any one option from following.");
-            Console.WriteLine(" 1.Duplicate Numbers\n 2.Unique Element Printer\n 3.Count Frequency of Elements\n 4.ArrayMinMaxFinder\n 5.Pattern Printer\n 6.Print Square Pattern\n 7.Word Reverser");
+            Console.WriteLine(" 1.Duplicate Numbers\n 2.Unique Element Printer\n 3.Count Frequency of Elements\n 4.ArrayMinMaxFinder\n 5.Pattern Printer\n 6.Print Square Pattern\n 7.Word Reverser\n 8.Calculate digit sum");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -66,6 +66,14 @@ namespace _4B_OOP_Problem
                     string reversedString = reverser.ReverseWords();
                     Console.WriteLine("Original string: " + input);
                     Console.WriteLine("Reversed string: " + reversedString);
+                    break;
+
+                case 8:
+                    Console.WriteLine("Enter a number:");
+                    int num = int.Parse(Console.ReadLine());
+                    DigitSumCalculator calculator = new DigitSumCalculator(num);
+                    int digitSum = calculator.CalculateDigitSum();
+                    Console.WriteLine("Sum of digits: " + digitSum);
                     break;
 
             }
