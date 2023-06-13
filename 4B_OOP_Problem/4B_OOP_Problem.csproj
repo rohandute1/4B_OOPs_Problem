@@ -46,6 +46,7 @@
     <Compile Include="DuplicateCounter.cs" />
     <Compile Include="ElementFrequencyCounter.cs" />
     <Compile Include="Max-Min_Element_Finder.cs" />
+    <Compile Include="PatternPrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UniqueElementPrinter.cs" />
